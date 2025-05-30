@@ -1,0 +1,8 @@
+<launch>
+    <!-- Launch RL ROS interface -->
+    <node pkg="arc_rl_interface" type="ros_interface.py" name="arc_rl_interface" output="screen" />
+
+    <!-- Include odometry and controk publishers -->
+    <!-- Adjust topics as needed per your ARC pro config -->
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen" />
+</launch>

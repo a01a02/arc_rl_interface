@@ -1,0 +1,18 @@
+# ROS build artifacts
+build/
+devel/
+install/
+
+# Python virtual environments
+venv/
+
+# ROS workspace meta
+.catkin_workspace
+
+# Pycache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
