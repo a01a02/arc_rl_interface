@@ -1,11 +1,30 @@
-# arc_rl_interface
+# ARC RL Interface
 
-ROS package + RL training code to control ARC Pro autonomous cars using reinforcement learning with Voronoi-based state discretization.
+This repository contains:
 
-## Structure
-- `src/arc_rl_interface/`: ROS package
-- `scripts/`: PPO training code
-- `data/`: Voronoi map data
+- `arc_rl_interface/`: ROS package for ARC Pro car reinforcement learning interface
+- `scripts/`: PPO training and evaluation scripts
+- `data/`: Voronoi map data or other environment files
 
-## Usage
-Clone into your ROS workspace `src/` directory, rebuild with `catkin_make`, and train using provided PPO scripts.
+---
+
+## Project Overview
+
+This project implements reinforcement learning control for ARC Pro robots using:
+
+- Gymnasium + Stable-Baselines3 PPO
+- ROS Noetic for real-time control
+- Voronoi-based state discretization
+
+---
+
+## Cloning & Build Instructions
+
+### Clone inside your ROS workspace `src/` folder:
+
+```bash
+cd ~/arc_rl_ws/src
+git clone git@github.com:a01a02/arc_rl_interface.git
+cd ~/arc_rl_ws
+catkin_make
+source devel/setup.bash
